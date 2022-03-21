@@ -13,3 +13,5 @@
 - Implement, model with seed of database
 - Implement excections, validations and security
 - Implement the endpoint GET /users/profile
+
+https://raw.githubusercontent.com/felipeschirmann/bds05/main/uml.png
