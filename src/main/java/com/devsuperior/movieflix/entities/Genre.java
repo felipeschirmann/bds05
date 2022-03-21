@@ -1,6 +1,8 @@
 package com.devsuperior.movieflix.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Genre implements Serializable {
@@ -8,6 +10,8 @@ public class Genre implements Serializable {
 	
 	private Long id;
 	private String name;
+	
+	private List<Movie> movies = new ArrayList<>();
 	
 	public Genre() {
 		
@@ -34,6 +38,10 @@ public class Genre implements Serializable {
 		this.name = name;
 	}
 
+	public List<Movie> getMovies() {
+		return movies;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);

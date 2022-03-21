@@ -8,6 +8,9 @@ public class Review implements Serializable {
 	
 	private Long id;
 	private String text;
+	
+	private User user = new User();
+	private Movie movie = new Movie();
 
 	public Review() {
 		
@@ -32,6 +35,22 @@ public class Review implements Serializable {
 
 	public void setText(String text) {
 		this.text = text;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public Movie getMovie() {
+		return movie;
+	}
+
+	public void setMovie(Movie movie) {
+		this.movie = movie;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Override
